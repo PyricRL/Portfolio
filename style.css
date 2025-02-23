@@ -3,28 +3,116 @@
     padding: 0;
 }
 
-body {
-    background-color: #14141a;
-    color: white;
-    height: 100vh;
+html {
+    font-family: Poppins, "Segoe UI", sans-serif;
 }
 
-.tabs {
-    position: fixed;
-    top: 50%;
-    left: 50px;
+body {
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #14141a;
+    color: white;
+}
+
+header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.line-decoration {
+    margin-top: 20px;
+    background-color: aliceblue;
+    flex-grow: 1;
+    height: 8px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 625;
+}
+
+#description {
     display: flex;
     flex-direction: column;
+    font-size: 32px;
+    color: #b9b9b9;
+}
+
+#location {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    font-size: 20px;
+    align-items: center;
+    color: #b9b9b9;
+}
+
+#technologies {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
-.tab {
-    font-size: 30px;
-    padding: 5px;
-    border-color: aqua;
-    border-radius: 1px;
+#technologies svg {
+    width: 25px;
+    height: 25px;
+    fill: #ffffff;
+}
+
+.tech-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
     border-style: solid;
-    text-align: center;
-    width: 100px;
-    height: 50px;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.tech-box:hover {
+    transform: scale(1.1);
+}
+
+#projects {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 300px;
+    align-items: start;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#projects hr {
+    width: 100%;
+    height: 3px;
+    background-color: #525252;
+    border-radius: 5px;
+    border-color: #525252;
 }
